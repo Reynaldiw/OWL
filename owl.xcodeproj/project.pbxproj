@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		534A93FE2477A4FB00D1F6D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A93FD2477A4FB00D1F6D8 /* AppDelegate.swift */; };
 		534A94002477A4FB00D1F6D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A93FF2477A4FB00D1F6D8 /* SceneDelegate.swift */; };
-		534A94022477A4FB00D1F6D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A94012477A4FB00D1F6D8 /* ViewController.swift */; };
 		534A94072477A4FC00D1F6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534A94062477A4FC00D1F6D8 /* Assets.xcassets */; };
 		534A940A2477A4FC00D1F6D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534A94082477A4FC00D1F6D8 /* LaunchScreen.storyboard */; };
 		912BB2E42477C5C4005733A1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2E32477C5C4005733A1 /* OnboardingViewController.swift */; };
@@ -23,7 +22,6 @@
 		534A93FA2477A4FB00D1F6D8 /* owl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = owl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534A93FD2477A4FB00D1F6D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534A93FF2477A4FB00D1F6D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		534A94012477A4FB00D1F6D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		534A94062477A4FC00D1F6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		534A94092477A4FC00D1F6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		534A940B2477A4FC00D1F6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53231D03247A9DE5009E3E84 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				912BB2EB2477C618005733A1 /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		53231D04247A9DF3009E3E84 /* On Boarding */ = {
+			isa = PBXGroup;
+			children = (
+				912BB2E32477C5C4005733A1 /* OnboardingViewController.swift */,
+				912BB2E52477C5D5005733A1 /* OnboardingViewCell.swift */,
+			);
+			path = "On Boarding";
+			sourceTree = "<group>";
+		};
+		53231D05247A9E02009E3E84 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				912BB2E72477C5E4005733A1 /* LoginScreen.swift */,
+				912BB2E92477C5F5005733A1 /* LoginField.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		534A93F12477A4FB00D1F6D8 = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +90,9 @@
 			children = (
 				534A93FD2477A4FB00D1F6D8 /* AppDelegate.swift */,
 				534A93FF2477A4FB00D1F6D8 /* SceneDelegate.swift */,
-				912BB2E32477C5C4005733A1 /* OnboardingViewController.swift */,
-				912BB2E52477C5D5005733A1 /* OnboardingViewCell.swift */,
-				912BB2E72477C5E4005733A1 /* LoginScreen.swift */,
-				912BB2E92477C5F5005733A1 /* LoginField.swift */,
-				912BB2EB2477C618005733A1 /* Extension.swift */,
-				534A94012477A4FB00D1F6D8 /* ViewController.swift */,
+				53231D03247A9DE5009E3E84 /* Utils */,
+				53231D04247A9DF3009E3E84 /* On Boarding */,
+				53231D05247A9E02009E3E84 /* Login */,
 				534A94062477A4FC00D1F6D8 /* Assets.xcassets */,
 				534A94082477A4FC00D1F6D8 /* LaunchScreen.storyboard */,
 				534A940B2477A4FC00D1F6D8 /* Info.plist */,
@@ -149,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534A94022477A4FB00D1F6D8 /* ViewController.swift in Sources */,
 				912BB2E62477C5D5005733A1 /* OnboardingViewCell.swift in Sources */,
 				534A93FE2477A4FB00D1F6D8 /* AppDelegate.swift in Sources */,
 				534A94002477A4FB00D1F6D8 /* SceneDelegate.swift in Sources */,
