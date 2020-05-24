@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912BB2DC2475EFC7005733A1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */; };
+		912BB2DE2475F4DE005733A1 /* OnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */; };
+		912BB2E024768324005733A1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2DF24768324005733A1 /* LoginScreen.swift */; };
+		912BB2E2247720A4005733A1 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2E1247720A4005733A1 /* LoginField.swift */; };
+		9180964D24757FC000286490 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180964C24757FC000286490 /* Extension.swift */; };
 		918DE69524734D9F00885EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918DE69424734D9F00885EE8 /* AppDelegate.swift */; };
 		918DE69724734D9F00885EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918DE69624734D9F00885EE8 /* SceneDelegate.swift */; };
 		918DE69924734D9F00885EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918DE69824734D9F00885EE8 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCell.swift; sourceTree = "<group>"; };
+		912BB2DF24768324005733A1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		912BB2E1247720A4005733A1 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		9180964C24757FC000286490 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		918DE69124734D9F00885EE8 /* Owl Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Owl Onboarding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		918DE69424734D9F00885EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918DE69624734D9F00885EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +69,11 @@
 				918DE69424734D9F00885EE8 /* AppDelegate.swift */,
 				918DE69624734D9F00885EE8 /* SceneDelegate.swift */,
 				918DE69824734D9F00885EE8 /* ViewController.swift */,
+				912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */,
+				912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */,
+				912BB2DF24768324005733A1 /* LoginScreen.swift */,
+				912BB2E1247720A4005733A1 /* LoginField.swift */,
+				9180964C24757FC000286490 /* Extension.swift */,
 				918DE69A24734D9F00885EE8 /* Main.storyboard */,
 				918DE69D24734DA100885EE8 /* Assets.xcassets */,
 				918DE69F24734DA100885EE8 /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912BB2E2247720A4005733A1 /* LoginField.swift in Sources */,
 				918DE69924734D9F00885EE8 /* ViewController.swift in Sources */,
+				9180964D24757FC000286490 /* Extension.swift in Sources */,
+				912BB2DC2475EFC7005733A1 /* OnboardingViewController.swift in Sources */,
 				918DE69524734D9F00885EE8 /* AppDelegate.swift in Sources */,
+				912BB2E024768324005733A1 /* LoginScreen.swift in Sources */,
 				918DE69724734D9F00885EE8 /* SceneDelegate.swift in Sources */,
+				912BB2DE2475F4DE005733A1 /* OnboardingViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
