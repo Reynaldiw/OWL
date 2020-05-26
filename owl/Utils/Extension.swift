@@ -46,7 +46,7 @@ extension UIView {
     func setCellShadow() {
         self.layer.shadowColor = UIColor.darkGray.cgColor
         self.layer.shadowOffset = CGSize(width: 1, height: 1)
-        self.layer.shadowOpacity = 1
+        self.layer.shadowOpacity = 0.5
         self.layer.shadowRadius = 2
         self.layer.masksToBounds = false
         self.clipsToBounds = false
@@ -67,8 +67,6 @@ extension CGColor {
     }
 }
 
-
-
 extension UITextField {
     func setLeftPaddingPoints(_ amount:CGFloat){
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
@@ -80,6 +78,13 @@ extension UITextField {
         self.rightView = paddingView
         self.rightViewMode = .always
     }
-    
-    
+}
+
+extension UIStackView {
+    func changeBackgroundColor(color: UIColor) {
+        let backgroundLayer = CAShapeLayer()
+        layer.insertSublayer(backgroundLayer, at: 0)
+        backgroundLayer.path = UIBezierPath(rect: self.bounds).cgPath
+        backgroundLayer.fillColor = color.cgColor
+    }
 }
