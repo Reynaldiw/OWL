@@ -23,20 +23,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nc = UINavigationController(rootViewController: dashboard)
         
         // Create the window. Be sure to use this initializer and not the frame one.
-        let win = UIWindow(windowScene: winScene)
-        win.rootViewController = nc
-        win.makeKeyAndVisible()
-        window = win
-//
-//
-//
-//        guard let scene = (scene as? UIWindowScene) else { return }
-//
-//        window = UIWindow(windowScene: scene)
-//
-//        let nc = UINavigationController(rootViewController: ViewController())
-//        window?.rootViewController = nc
-//        window?.makeKeyAndVisible()
+        window = UIWindow(windowScene: winScene)
+        window?.rootViewController = nc
+        window?.makeKeyAndVisible()
         
     }
 
