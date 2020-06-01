@@ -91,13 +91,13 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		53231D06247A9E7F009E3E84 /* Dashboard */ = {
+		53231D06247A9E7F009E3E84 /* Class */ = {
 			isa = PBXGroup;
 			children = (
 				53231D12247B6E20009E3E84 /* View */,
 				53231D13247B6E28009E3E84 /* Model */,
 			);
-			path = Dashboard;
+			path = Class;
 			sourceTree = "<group>";
 		};
 		53231D0F247B07E9009E3E84 /* Cell */ = {
@@ -153,7 +153,7 @@
 				534A93FF2477A4FB00D1F6D8 /* SceneDelegate.swift */,
 				53231D03247A9DE5009E3E84 /* Utils */,
 				53231D04247A9DF3009E3E84 /* On Boarding */,
-				53231D06247A9E7F009E3E84 /* Dashboard */,
+				53231D06247A9E7F009E3E84 /* Class */,
 				53231D05247A9E02009E3E84 /* Login */,
 				534A94062477A4FC00D1F6D8 /* Assets.xcassets */,
 				534A94082477A4FC00D1F6D8 /* LaunchScreen.storyboard */,
