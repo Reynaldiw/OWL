@@ -45,7 +45,7 @@
 		91781BDB248294BE00FDDD6D /* Owl Onboarding.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Owl Onboarding.entitlements"; sourceTree = "<group>"; };
 		91781BDD2482A59C00FDDD6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9180964C24757FC000286490 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		918DE69124734D9F00885EE8 /* Owl Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Owl Onboarding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		918DE69124734D9F00885EE8 /* Owl .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Owl .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		918DE69424734D9F00885EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		918DE69624734D9F00885EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		918DE69824734D9F00885EE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		918DE69224734D9F00885EE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				918DE69124734D9F00885EE8 /* Owl Onboarding.app */,
+				918DE69124734D9F00885EE8 /* Owl .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			);
 			name = "Owl Onboarding";
 			productName = "Owl Onboarding";
-			productReference = 918DE69124734D9F00885EE8 /* Owl Onboarding.app */;
+			productReference = 918DE69124734D9F00885EE8 /* Owl .app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -485,14 +485,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Owl Onboarding/Owl Onboarding.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67485B37B7;
+				DEVELOPMENT_TEAM = YKPQ92PAK3;
 				INFOPLIST_FILE = "Owl Onboarding/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nopal.Owl-Onboarding";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reynaldiwijaya.owl;
+				PRODUCT_NAME = "Owl ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,14 +506,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Owl Onboarding/Owl Onboarding.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67485B37B7;
+				DEVELOPMENT_TEAM = YKPQ92PAK3;
 				INFOPLIST_FILE = "Owl Onboarding/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "nopal.Owl-Onboarding";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reynaldiwijaya.owl;
+				PRODUCT_NAME = "Owl ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

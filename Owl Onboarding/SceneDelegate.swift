@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let ob = OnboardingViewController()
         let ls = LoginScreen()
         let lf = LoginField()
-        let nc = UINavigationController(rootViewController: ob)
+        let nc = UINavigationController(rootViewController: mb)
         
         // Create the window. Be sure to use this initializer and not the frame one.
         let win = UIWindow(windowScene: winScene)
