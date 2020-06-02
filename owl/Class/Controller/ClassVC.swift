@@ -10,10 +10,8 @@ import UIKit
 
 class ClassVC: UIViewController {
     
-    @IBOutlet weak var interestCollectionView: UICollectionView!
     @IBOutlet weak var popularLiveClassCollectionView: UICollectionView!
     @IBOutlet weak var popularProjectCollectionView: UICollectionView!
-    
     @IBOutlet weak var menuCollectionView: UICollectionView!
     
     var classView: ClassView { return self.view as! ClassView }
@@ -78,7 +76,7 @@ class ClassVC: UIViewController {
         self.menuCollectionView = classView.menuCollectionView
         self.menuCollectionView.delegate = self
         self.menuCollectionView.dataSource = self
-        self.menuCollectionView.register(MenuCell.self, forCellWithReuseIdentifier: Constants.INTEREST_CELL_IDENTIFIER)
+        self.menuCollectionView.register(MenuCell.self, forCellWithReuseIdentifier: Constants.MENU_CELL_IDENTIFIER)
         
         self.popularLiveClassCollectionView = classView.popularLiveClassView.liveClassCV
         self.popularLiveClassCollectionView.delegate = self
@@ -120,7 +118,7 @@ extension ClassVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             return cell
         }
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.INTEREST_CELL_IDENTIFIER, for: indexPath) as! MenuCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.MENU_CELL_IDENTIFIER, for: indexPath) as! MenuCell
         
         let menuModel = menuModels[indexPath.row]
         

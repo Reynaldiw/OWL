@@ -9,7 +9,7 @@
 import Foundation
 
 struct Constants {
-    static let INTEREST_CELL_IDENTIFIER = "InterestCell"
+    static let MENU_CELL_IDENTIFIER = "MenuCell"
     static let CHALLENGE_CELL_IDENTIFIER = "ChallengeCell"
     static let LIVE_CLASS_CELL_IDENTIFIEL = "LiveClassCell"
     static let PROJECT_CELL_IDENTIFIER = "ProjectCell"
