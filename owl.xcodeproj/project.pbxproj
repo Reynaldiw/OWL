@@ -32,6 +32,10 @@
 		53EFFB4F24865AB20079291B /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB4D24865AB20079291B /* DataModel.xcdatamodeld */; };
 		53EFFB5224865BA80079291B /* DummyCategoryLearnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB5124865BA80079291B /* DummyCategoryLearnModel.swift */; };
 		53EFFB5424865BB80079291B /* DummyTopicLearnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB5324865BB80079291B /* DummyTopicLearnModel.swift */; };
+		53EFFB56248687970079291B /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB55248687970079291B /* PersistenceService.swift */; };
+		53EFFB5A24868B2C0079291B /* LearnRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB5924868B2C0079291B /* LearnRepository.swift */; };
+		53EFFB5C24868C5F0079291B /* LearnService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB5B24868C5F0079291B /* LearnService.swift */; };
+		53EFFB5E24869B960079291B /* HeaderCategoryLearnReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB5D24869B960079291B /* HeaderCategoryLearnReusableView.swift */; };
 		912BB2E42477C5C4005733A1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2E32477C5C4005733A1 /* OnboardingViewController.swift */; };
 		912BB2E62477C5D5005733A1 /* OnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2E52477C5D5005733A1 /* OnboardingViewCell.swift */; };
 		912BB2E82477C5E4005733A1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2E72477C5E4005733A1 /* LoginScreen.swift */; };
@@ -67,6 +71,10 @@
 		53EFFB4E24865AB20079291B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		53EFFB5124865BA80079291B /* DummyCategoryLearnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCategoryLearnModel.swift; sourceTree = "<group>"; };
 		53EFFB5324865BB80079291B /* DummyTopicLearnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTopicLearnModel.swift; sourceTree = "<group>"; };
+		53EFFB55248687970079291B /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		53EFFB5924868B2C0079291B /* LearnRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnRepository.swift; sourceTree = "<group>"; };
+		53EFFB5B24868C5F0079291B /* LearnService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnService.swift; sourceTree = "<group>"; };
+		53EFFB5D24869B960079291B /* HeaderCategoryLearnReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCategoryLearnReusableView.swift; sourceTree = "<group>"; };
 		912BB2E32477C5C4005733A1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		912BB2E52477C5D5005733A1 /* OnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCell.swift; sourceTree = "<group>"; };
 		912BB2E72477C5E4005733A1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -184,6 +192,7 @@
 				53EFFB44248657110079291B /* Learn */,
 				53EFFB4B248657CB0079291B /* Challenge */,
 				53EFFB4D24865AB20079291B /* DataModel.xcdatamodeld */,
+				53EFFB55248687970079291B /* PersistenceService.swift */,
 				534A94062477A4FC00D1F6D8 /* Assets.xcassets */,
 				534A94082477A4FC00D1F6D8 /* LaunchScreen.storyboard */,
 				534A940B2477A4FC00D1F6D8 /* Info.plist */,
@@ -196,6 +205,7 @@
 			children = (
 				53EFFB47248657450079291B /* Controllers */,
 				53EFFB5024865B720079291B /* Models */,
+				53EFFB57248688C50079291B /* Repository */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -213,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				53EFFB49248657730079291B /* LearnView.swift */,
+				53EFFB5D24869B960079291B /* HeaderCategoryLearnReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +252,15 @@
 				53EFFB5324865BB80079291B /* DummyTopicLearnModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		53EFFB57248688C50079291B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				53EFFB5924868B2C0079291B /* LearnRepository.swift */,
+				53EFFB5B24868C5F0079291B /* LearnService.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,16 +333,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EFFB56248687970079291B /* PersistenceService.swift in Sources */,
 				53EFFB4A248657730079291B /* LearnView.swift in Sources */,
 				912BB2E62477C5D5005733A1 /* OnboardingViewCell.swift in Sources */,
 				53231D1C247B9E15009E3E84 /* ChallengeCell.swift in Sources */,
 				5308B0A62485880E00A15E36 /* MenuModel.swift in Sources */,
 				53231D0E247AD17A009E3E84 /* Colors.swift in Sources */,
 				534A93FE2477A4FB00D1F6D8 /* AppDelegate.swift in Sources */,
+				53EFFB5E24869B960079291B /* HeaderCategoryLearnReusableView.swift in Sources */,
 				534A94002477A4FB00D1F6D8 /* SceneDelegate.swift in Sources */,
 				53EFFB5424865BB80079291B /* DummyTopicLearnModel.swift in Sources */,
 				5308B0AC2485943C00A15E36 /* LiveClassCell.swift in Sources */,
 				912BB2E42477C5C4005733A1 /* OnboardingViewController.swift in Sources */,
+				53EFFB5C24868C5F0079291B /* LearnService.swift in Sources */,
 				5308B0AA2485907100A15E36 /* HeaderCollectionView.swift in Sources */,
 				53231D1A247B8936009E3E84 /* ChallengesView.swift in Sources */,
 				53EFFB5224865BA80079291B /* DummyCategoryLearnModel.swift in Sources */,
@@ -338,6 +361,7 @@
 				5308B0A82485900A00A15E36 /* LiveClassView.swift in Sources */,
 				53231D08247A9EAF009E3E84 /* ClassVC.swift in Sources */,
 				53231D18247B741C009E3E84 /* Constants.swift in Sources */,
+				53EFFB5A24868B2C0079291B /* LearnRepository.swift in Sources */,
 				912BB2EA2477C5F5005733A1 /* LoginField.swift in Sources */,
 				912BB2EC2477C618005733A1 /* Extension.swift in Sources */,
 				5308B0B22485BE3D00A15E36 /* ProjectModel.swift in Sources */,

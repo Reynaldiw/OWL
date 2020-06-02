@@ -9,9 +9,14 @@
 import UIKit
 
 class LearnView: UIView {
+    
+    var frameWidth: CGFloat?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = Colors.greyColorBackground
+        
+        frameWidth = frame.width
         
         setupViews()
         setupConstraints()
@@ -27,19 +32,19 @@ class LearnView: UIView {
     
     lazy var learnCV: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .horizontal
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
-        flowLayout.minimumInteritemSpacing = 13
-        flowLayout.minimumLineSpacing = 13
+        flowLayout.scrollDirection = .vertical
+        flowLayout.headerReferenceSize = CGSize(width: self.frameWidth!, height: 35)
+        flowLayout.sectionInset = UIEdgeInsets(top: 8, left: 30, bottom: 15, right: 30)
+        flowLayout.minimumInteritemSpacing = 10
+        flowLayout.minimumLineSpacing = 10
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         cv.backgroundColor = .clear
-        cv.showsHorizontalScrollIndicator = false
         return cv
     }()
     
     fileprivate func setupLearnCVConstraint() {
-        learnCV.anchor(top: self.topAnchor, bottom: self.bottomAnchor, leading: self.leadingAnchor, trailing: self.trailingAnchor, marginTop: 0, marginBottom: 0, marginLeading: 0, marginTrailing: 0, width: 0, height: 0, centerX: nil, centerY: nil, marginFromCenterX: 0, marginFromCenterY: 0)
+        learnCV.anchor(top: self.safeAreaLayoutGuide.topAnchor, bottom: self.bottomAnchor, leading: self.leadingAnchor, trailing: self.trailingAnchor, marginTop: 30, marginBottom: 0, marginLeading: 0, marginTrailing: 0, width: 0, height: 0, centerX: nil, centerY: nil, marginFromCenterX: 0, marginFromCenterY: 0)
     }
     
     required init?(coder: NSCoder) {
