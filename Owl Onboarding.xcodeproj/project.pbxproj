@@ -3,14 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91087F062483B018003C7156 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91087F052483B018003C7156 /* GoogleService-Info.plist */; };
 		912BB2DC2475EFC7005733A1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */; };
 		912BB2DE2475F4DE005733A1 /* OnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */; };
 		912BB2E024768324005733A1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2DF24768324005733A1 /* LoginScreen.swift */; };
 		912BB2E2247720A4005733A1 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912BB2E1247720A4005733A1 /* LoginField.swift */; };
+		91781BDA2481DEDB00FDDD6D /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91781BD92481DEDB00FDDD6D /* SignupPage.swift */; };
+		91781BDE2482A59C00FDDD6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91781BDD2482A59C00FDDD6D /* User.swift */; };
 		9180964D24757FC000286490 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9180964C24757FC000286490 /* Extension.swift */; };
 		918DE69524734D9F00885EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918DE69424734D9F00885EE8 /* AppDelegate.swift */; };
 		918DE69724734D9F00885EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918DE69624734D9F00885EE8 /* SceneDelegate.swift */; };
@@ -18,13 +21,29 @@
 		918DE69C24734D9F00885EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918DE69A24734D9F00885EE8 /* Main.storyboard */; };
 		918DE69E24734DA100885EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918DE69D24734DA100885EE8 /* Assets.xcassets */; };
 		918DE6A124734DA100885EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918DE69F24734DA100885EE8 /* LaunchScreen.storyboard */; };
+		91B6D4492485CCE3001B2ACC /* ClassMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D4482485CCE3001B2ACC /* ClassMenu.swift */; };
+		91B6D44B2485D413001B2ACC /* TopMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D44A2485D413001B2ACC /* TopMenuCell.swift */; };
+		91B6D44D2485D43A001B2ACC /* NewsSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D44C2485D43A001B2ACC /* NewsSliderCell.swift */; };
+		91B6D44F2485D457001B2ACC /* LiveClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D44E2485D457001B2ACC /* LiveClassCell.swift */; };
+		91B6D4512485D466001B2ACC /* PopularProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D4502485D466001B2ACC /* PopularProjectCell.swift */; };
+		91B6D4532485D478001B2ACC /* DiscussionForumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D4522485D478001B2ACC /* DiscussionForumCell.swift */; };
+		91B6D45B24863910001B2ACC /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D45A24863910001B2ACC /* BookmarkViewController.swift */; };
+		91B6D45D2486391E001B2ACC /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D45C2486391E001B2ACC /* NotificationViewController.swift */; };
+		91B6D45F2486394D001B2ACC /* MaintabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D45E2486394D001B2ACC /* MaintabBar.swift */; };
+		91B6D46124863A0F001B2ACC /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B6D46024863A0F001B2ACC /* LearnViewController.swift */; };
+		E3119DE00046EC386435EE67 /* Pods_Owl_Onboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03D59AC02D2A27717CE4A3B /* Pods_Owl_Onboarding.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D49805650FF044FFFBCC24E /* Pods-Owl Onboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Owl Onboarding.debug.xcconfig"; path = "Target Support Files/Pods-Owl Onboarding/Pods-Owl Onboarding.debug.xcconfig"; sourceTree = "<group>"; };
+		91087F052483B018003C7156 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCell.swift; sourceTree = "<group>"; };
 		912BB2DF24768324005733A1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		912BB2E1247720A4005733A1 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		91781BD92481DEDB00FDDD6D /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
+		91781BDB248294BE00FDDD6D /* Owl Onboarding.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Owl Onboarding.entitlements"; sourceTree = "<group>"; };
+		91781BDD2482A59C00FDDD6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9180964C24757FC000286490 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		918DE69124734D9F00885EE8 /* Owl Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Owl Onboarding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		918DE69424734D9F00885EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +53,18 @@
 		918DE69D24734DA100885EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		918DE6A024734DA100885EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918DE6A224734DA100885EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B6D4482485CCE3001B2ACC /* ClassMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMenu.swift; sourceTree = "<group>"; };
+		91B6D44A2485D413001B2ACC /* TopMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuCell.swift; sourceTree = "<group>"; };
+		91B6D44C2485D43A001B2ACC /* NewsSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSliderCell.swift; sourceTree = "<group>"; };
+		91B6D44E2485D457001B2ACC /* LiveClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveClassCell.swift; sourceTree = "<group>"; };
+		91B6D4502485D466001B2ACC /* PopularProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularProjectCell.swift; sourceTree = "<group>"; };
+		91B6D4522485D478001B2ACC /* DiscussionForumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionForumCell.swift; sourceTree = "<group>"; };
+		91B6D45A24863910001B2ACC /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		91B6D45C2486391E001B2ACC /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		91B6D45E2486394D001B2ACC /* MaintabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintabBar.swift; sourceTree = "<group>"; };
+		91B6D46024863A0F001B2ACC /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		BFE3B7CF795481051DA82A88 /* Pods-Owl Onboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Owl Onboarding.release.xcconfig"; path = "Target Support Files/Pods-Owl Onboarding/Pods-Owl Onboarding.release.xcconfig"; sourceTree = "<group>"; };
+		E03D59AC02D2A27717CE4A3B /* Pods_Owl_Onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Owl_Onboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +72,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3119DE00046EC386435EE67 /* Pods_Owl_Onboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DED26F994ED9454571A5426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E03D59AC02D2A27717CE4A3B /* Pods_Owl_Onboarding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		918DE68824734D9F00885EE8 = {
 			isa = PBXGroup;
 			children = (
+				91B6D46424867B75001B2ACC /* Onboarding */,
+				91B6D4462485C89A001B2ACC /* Login and Signup */,
+				91B6D45424863889001B2ACC /* MaintabBar */,
 				918DE69324734D9F00885EE8 /* Owl Onboarding */,
 				918DE69224734D9F00885EE8 /* Products */,
+				F083E209E3D62F6AAA59640A /* Pods */,
+				0DED26F994ED9454571A5426 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,20 +111,96 @@
 		918DE69324734D9F00885EE8 /* Owl Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				91781BDB248294BE00FDDD6D /* Owl Onboarding.entitlements */,
 				918DE69424734D9F00885EE8 /* AppDelegate.swift */,
 				918DE69624734D9F00885EE8 /* SceneDelegate.swift */,
 				918DE69824734D9F00885EE8 /* ViewController.swift */,
-				912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */,
-				912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */,
-				912BB2DF24768324005733A1 /* LoginScreen.swift */,
-				912BB2E1247720A4005733A1 /* LoginField.swift */,
 				9180964C24757FC000286490 /* Extension.swift */,
 				918DE69A24734D9F00885EE8 /* Main.storyboard */,
+				91087F052483B018003C7156 /* GoogleService-Info.plist */,
 				918DE69D24734DA100885EE8 /* Assets.xcassets */,
 				918DE69F24734DA100885EE8 /* LaunchScreen.storyboard */,
 				918DE6A224734DA100885EE8 /* Info.plist */,
+				91781BDD2482A59C00FDDD6D /* User.swift */,
 			);
 			path = "Owl Onboarding";
+			sourceTree = "<group>";
+		};
+		91B6D4462485C89A001B2ACC /* Login and Signup */ = {
+			isa = PBXGroup;
+			children = (
+				91781BD92481DEDB00FDDD6D /* SignupPage.swift */,
+				912BB2E1247720A4005733A1 /* LoginField.swift */,
+				912BB2DF24768324005733A1 /* LoginScreen.swift */,
+			);
+			path = "Login and Signup";
+			sourceTree = "<group>";
+		};
+		91B6D4472485C95C001B2ACC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D4482485CCE3001B2ACC /* ClassMenu.swift */,
+				91B6D44A2485D413001B2ACC /* TopMenuCell.swift */,
+				91B6D44C2485D43A001B2ACC /* NewsSliderCell.swift */,
+				91B6D44E2485D457001B2ACC /* LiveClassCell.swift */,
+				91B6D4522485D478001B2ACC /* DiscussionForumCell.swift */,
+				91B6D4502485D466001B2ACC /* PopularProjectCell.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		91B6D45424863889001B2ACC /* MaintabBar */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D457248638EF001B2ACC /* Notification */,
+				91B6D456248638BF001B2ACC /* Bookmark */,
+				91B6D455248638B5001B2ACC /* Learn */,
+				91B6D4472485C95C001B2ACC /* Class */,
+				91B6D45E2486394D001B2ACC /* MaintabBar.swift */,
+			);
+			path = MaintabBar;
+			sourceTree = "<group>";
+		};
+		91B6D455248638B5001B2ACC /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D46024863A0F001B2ACC /* LearnViewController.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		91B6D456248638BF001B2ACC /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D45A24863910001B2ACC /* BookmarkViewController.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		91B6D457248638EF001B2ACC /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				91B6D45C2486391E001B2ACC /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		91B6D46424867B75001B2ACC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				912BB2DD2475F4DE005733A1 /* OnboardingViewCell.swift */,
+				912BB2DB2475EFC7005733A1 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F083E209E3D62F6AAA59640A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D49805650FF044FFFBCC24E /* Pods-Owl Onboarding.debug.xcconfig */,
+				BFE3B7CF795481051DA82A88 /* Pods-Owl Onboarding.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 918DE6A524734DA100885EE8 /* Build configuration list for PBXNativeTarget "Owl Onboarding" */;
 			buildPhases = (
+				8837E28B037998BC08E6916E /* [CP] Check Pods Manifest.lock */,
 				918DE68D24734D9F00885EE8 /* Sources */,
 				918DE68E24734D9F00885EE8 /* Frameworks */,
 				918DE68F24734D9F00885EE8 /* Resources */,
+				AD75581D6AF02DAA0994DB19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,24 +265,79 @@
 			files = (
 				918DE6A124734DA100885EE8 /* LaunchScreen.storyboard in Resources */,
 				918DE69E24734DA100885EE8 /* Assets.xcassets in Resources */,
+				91087F062483B018003C7156 /* GoogleService-Info.plist in Resources */,
 				918DE69C24734D9F00885EE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8837E28B037998BC08E6916E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Owl Onboarding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD75581D6AF02DAA0994DB19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Owl Onboarding/Pods-Owl Onboarding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Owl Onboarding/Pods-Owl Onboarding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Owl Onboarding/Pods-Owl Onboarding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		918DE68D24734D9F00885EE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B6D4512485D466001B2ACC /* PopularProjectCell.swift in Sources */,
 				912BB2E2247720A4005733A1 /* LoginField.swift in Sources */,
 				918DE69924734D9F00885EE8 /* ViewController.swift in Sources */,
 				9180964D24757FC000286490 /* Extension.swift in Sources */,
 				912BB2DC2475EFC7005733A1 /* OnboardingViewController.swift in Sources */,
+				91B6D44B2485D413001B2ACC /* TopMenuCell.swift in Sources */,
+				91B6D4492485CCE3001B2ACC /* ClassMenu.swift in Sources */,
+				91B6D44D2485D43A001B2ACC /* NewsSliderCell.swift in Sources */,
 				918DE69524734D9F00885EE8 /* AppDelegate.swift in Sources */,
+				91B6D44F2485D457001B2ACC /* LiveClassCell.swift in Sources */,
+				91781BDA2481DEDB00FDDD6D /* SignupPage.swift in Sources */,
+				91B6D46124863A0F001B2ACC /* LearnViewController.swift in Sources */,
+				91B6D45D2486391E001B2ACC /* NotificationViewController.swift in Sources */,
 				912BB2E024768324005733A1 /* LoginScreen.swift in Sources */,
 				918DE69724734D9F00885EE8 /* SceneDelegate.swift in Sources */,
+				91B6D4532485D478001B2ACC /* DiscussionForumCell.swift in Sources */,
+				91B6D45F2486394D001B2ACC /* MaintabBar.swift in Sources */,
+				91781BDE2482A59C00FDDD6D /* User.swift in Sources */,
+				91B6D45B24863910001B2ACC /* BookmarkViewController.swift in Sources */,
 				912BB2DE2475F4DE005733A1 /* OnboardingViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +480,12 @@
 		};
 		918DE6A624734DA100885EE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D49805650FF044FFFBCC24E /* Pods-Owl Onboarding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Owl Onboarding/Owl Onboarding.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67485B37B7;
 				INFOPLIST_FILE = "Owl Onboarding/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,9 +500,12 @@
 		};
 		918DE6A724734DA100885EE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE3B7CF795481051DA82A88 /* Pods-Owl Onboarding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Owl Onboarding/Owl Onboarding.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67485B37B7;
 				INFOPLIST_FILE = "Owl Onboarding/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

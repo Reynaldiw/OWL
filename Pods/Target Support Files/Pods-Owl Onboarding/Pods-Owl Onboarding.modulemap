@@ -1,0 +1,6 @@
+framework module Pods_Owl_Onboarding {
+  umbrella header "Pods-Owl Onboarding-umbrella.h"
+
+  export *
+  module * { export * }
+}

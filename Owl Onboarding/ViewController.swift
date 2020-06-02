@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var user : User?
+    
     let imageView : UIImageView = {
         let img = UIImageView()
         img.image = UIImage(named: "OWL-Icon")
@@ -19,7 +21,7 @@ class ViewController: UIViewController {
     
     let pageTitle : UILabel = {
         let label = UILabel()
-        label.text = "Welcome to OWL"
+        label.text = "Dashboard"
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         return label
@@ -29,7 +31,7 @@ class ViewController: UIViewController {
         let tv = UILabel()
         tv.text = "An app that allow you to Learn, Explore and Teach each other by your on own learning."
         tv.font = UIFont.systemFont(ofSize: 14)
-        tv.numberOfLines = 3
+        tv.numberOfLines = 0
         tv.textAlignment = .center
         
         return tv
@@ -64,6 +66,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.rgb(red: 245, green: 245, blue: 245, alpha: 1)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        descriptionTitle.text = user?.debugDescription ?? "First name = \(user?.firstName) \(user?.email)"
+        
         setupLayout()
     }
     

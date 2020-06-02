@@ -20,11 +20,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let winScene = (scene as? UIWindowScene) else { return }
         
         // Create the root view controller as needed
+        let mb = MainTabBarController()
+        let cm = ClassMenu()
         let vc = ViewController()
         let ob = OnboardingViewController()
         let ls = LoginScreen()
         let lf = LoginField()
-        let nc = UINavigationController(rootViewController: ls)
+        let nc = UINavigationController(rootViewController: ob)
         
         // Create the window. Be sure to use this initializer and not the frame one.
         let win = UIWindow(windowScene: winScene)
