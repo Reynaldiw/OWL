@@ -24,7 +24,7 @@ struct ChallengeModel {
     var rating: Float?
     var overview: String?
     
-    func setupDummyChallengeModel() -> [ChallengeModel] {
+    static func getDummyChallengeModel() -> [ChallengeModel] {
         
         var challengeModels = [ChallengeModel]()
         

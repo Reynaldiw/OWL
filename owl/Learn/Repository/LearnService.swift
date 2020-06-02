@@ -10,9 +10,9 @@ import Foundation
 import CoreData
 
 protocol LearnService {
-    func getLocalCategoryLearnModel(onSuccess: @escaping(_ categoryLearnModels: [CategoryLearnModel]) -> Void, onFailed: @escaping(_ message: String) -> Void)
-    
-    func getLocalTopicLearnModel(with request: NSFetchRequest<TopicLearnModel> , predicate: NSPredicate?, parentModel: CategoryLearnModel?, onSuccess: @escaping(_ categoryLearnModels: [TopicLearnModel]) -> Void, onFailed: @escaping(_ message: String) -> Void)
-    
-    func saveData(onSuccess: @escaping(_ message: String) -> Void, onFailed: @escaping(_ message: String) -> Void)
+//    func getLocalCategoryLearnModel(onSuccess: @escaping(_ categoryLearnModels: [CategoryLearnModel]) -> Void, onFailed: @escaping(_ message: String) -> Void)
+//    
+//    func getLocalTopicLearnModel(with request: NSFetchRequest<TopicLearnModel> , predicate: NSPredicate?, parentModel: CategoryLearnModel?, onSuccess: @escaping(_ categoryLearnModels: [TopicLearnModel]) -> Void, onFailed: @escaping(_ message: String) -> Void)
+//    
+//    func saveData(onSuccess: @escaping(_ message: String) -> Void, onFailed: @escaping(_ message: String) -> Void)
 }

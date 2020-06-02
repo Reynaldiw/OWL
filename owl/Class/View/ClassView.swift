@@ -11,7 +11,7 @@ import UIKit
 class ClassView: UIView {
     
     let popularLiveClassView = LiveClassView()
-    let popularProjectView = ProjectView()
+    let popularProjectView = PopularProjectView()
     
     let screenSize = UIScreen.main.bounds
     
