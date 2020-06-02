@@ -92,7 +92,7 @@ class ChallengeCell: UICollectionViewCell {
     let topicLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 5)
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -100,7 +100,7 @@ class ChallengeCell: UICollectionViewCell {
     let separetLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 5)
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.text = ">"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -109,7 +109,7 @@ class ChallengeCell: UICollectionViewCell {
     let subtopicLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 5)
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -120,7 +120,7 @@ class ChallengeCell: UICollectionViewCell {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.font = UIFont.boldSystemFont(ofSize: 11)
         label.numberOfLines = 3
         return label
@@ -159,7 +159,7 @@ class ChallengeCell: UICollectionViewCell {
     
     let levelLabel: UILabel = {
         let label = UILabel()
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.font = UIFont.systemFont(ofSize: 8)
         return label
     }()
@@ -187,7 +187,7 @@ class ChallengeCell: UICollectionViewCell {
     
     let timeLabel: UILabel = {
         let label = UILabel()
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.font = UIFont.systemFont(ofSize: 8)
         return label
     }()
@@ -225,7 +225,7 @@ class ChallengeCell: UICollectionViewCell {
     let takeChallengeLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 10)
-        label.textColor = Colors.greenPrimaryColor
+        label.textColor = Colors.bluePrimaryColor
         label.text = "Take Challenge"
         return label
     }()
