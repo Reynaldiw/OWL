@@ -72,6 +72,8 @@ class OnboardingViewController: UIViewController {
             nextButton.setTitle("Get Started", for: .normal)
             nextButton.backgroundColor = UIColor.rgb(red: 25, green: 203, blue: 204, alpha: 1)
             nextButton.setTitleColor(UIColor.white, for: .normal)
+            let vc = MainTabBar()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
         //print("current page", pageControl.currentPage)
