@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let winScene = (scene as? UIWindowScene) else { return }
         
-        let dashboard = OnboardingViewController()
-        let nc = UINavigationController(rootViewController: dashboard)
+        let materiVC = ListOfMateriVC()
+        let nc = UINavigationController(rootViewController: materiVC)
         
         // Create the window. Be sure to use this initializer and not the frame one.
         window = UIWindow(windowScene: winScene)

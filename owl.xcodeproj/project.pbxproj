@@ -28,6 +28,11 @@
 		538CB30324871F4600AC4979 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538CB30224871F4600AC4979 /* MainTabBar.swift */; };
 		538CB3052487203200AC4979 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538CB3042487203200AC4979 /* BookmarkVC.swift */; };
 		538CB3072487204800AC4979 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538CB3062487204800AC4979 /* NotificationVC.swift */; };
+		53C46CB42495349000BE62F6 /* ListOfMateriVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46CB32495349000BE62F6 /* ListOfMateriVC.swift */; };
+		53C46CB6249534BE00BE62F6 /* ListOfMateriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46CB5249534BE00BE62F6 /* ListOfMateriView.swift */; };
+		53C46CB924954E9500BE62F6 /* ListMateriCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46CB824954E9500BE62F6 /* ListMateriCell.swift */; };
+		53C46CBB24964F4A00BE62F6 /* HeaderListMateriReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46CBA24964F4A00BE62F6 /* HeaderListMateriReusableView.swift */; };
+		53C46CC024965EF500BE62F6 /* CategoryMateriModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C46CBF24965EF500BE62F6 /* CategoryMateriModel.swift */; };
 		53EFFB462486573D0079291B /* LearnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB452486573D0079291B /* LearnVC.swift */; };
 		53EFFB4A248657730079291B /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB49248657730079291B /* LearnView.swift */; };
 		53EFFB4F24865AB20079291B /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53EFFB4D24865AB20079291B /* DataModel.xcdatamodeld */; };
@@ -68,6 +73,11 @@
 		538CB30224871F4600AC4979 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		538CB3042487203200AC4979 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
 		538CB3062487204800AC4979 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		53C46CB32495349000BE62F6 /* ListOfMateriVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMateriVC.swift; sourceTree = "<group>"; };
+		53C46CB5249534BE00BE62F6 /* ListOfMateriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfMateriView.swift; sourceTree = "<group>"; };
+		53C46CB824954E9500BE62F6 /* ListMateriCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMateriCell.swift; sourceTree = "<group>"; };
+		53C46CBA24964F4A00BE62F6 /* HeaderListMateriReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderListMateriReusableView.swift; sourceTree = "<group>"; };
+		53C46CBF24965EF500BE62F6 /* CategoryMateriModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMateriModel.swift; sourceTree = "<group>"; };
 		53EFFB452486573D0079291B /* LearnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnVC.swift; sourceTree = "<group>"; };
 		53EFFB49248657730079291B /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		53EFFB4E24865AB20079291B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -193,6 +203,7 @@
 				538CB30124871EED00AC4979 /* MainTabBar */,
 				53231D06247A9E7F009E3E84 /* Class */,
 				53EFFB44248657110079291B /* Learn */,
+				53C46CB12495343D00BE62F6 /* Materi */,
 				53EFFB4D24865AB20079291B /* DataModel.xcdatamodeld */,
 				53EFFB55248687970079291B /* PersistenceService.swift */,
 				534A94062477A4FC00D1F6D8 /* Assets.xcassets */,
@@ -210,6 +221,42 @@
 				538CB3062487204800AC4979 /* NotificationVC.swift */,
 			);
 			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		53C46CB12495343D00BE62F6 /* Materi */ = {
+			isa = PBXGroup;
+			children = (
+				53C46CB22495344F00BE62F6 /* Controller */,
+				53C46CBE24965ED300BE62F6 /* Models */,
+			);
+			path = Materi;
+			sourceTree = "<group>";
+		};
+		53C46CB22495344F00BE62F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53C46CB724954E7F00BE62F6 /* Cell */,
+				53C46CBA24964F4A00BE62F6 /* HeaderListMateriReusableView.swift */,
+				53C46CB32495349000BE62F6 /* ListOfMateriVC.swift */,
+				53C46CB5249534BE00BE62F6 /* ListOfMateriView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53C46CB724954E7F00BE62F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				53C46CB824954E9500BE62F6 /* ListMateriCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		53C46CBE24965ED300BE62F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53C46CBF24965EF500BE62F6 /* CategoryMateriModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		53EFFB44248657110079291B /* Learn */ = {
@@ -346,12 +393,14 @@
 				534A94002477A4FB00D1F6D8 /* SceneDelegate.swift in Sources */,
 				538CB30324871F4600AC4979 /* MainTabBar.swift in Sources */,
 				53EFFB5424865BB80079291B /* DummyTopicLearnModel.swift in Sources */,
+				53C46CB924954E9500BE62F6 /* ListMateriCell.swift in Sources */,
 				538CB3072487204800AC4979 /* NotificationVC.swift in Sources */,
 				5308B0AC2485943C00A15E36 /* LiveClassCell.swift in Sources */,
 				912BB2E42477C5C4005733A1 /* OnboardingViewController.swift in Sources */,
 				53EFFB5C24868C5F0079291B /* LearnService.swift in Sources */,
 				5308B0AA2485907100A15E36 /* HeaderCollectionView.swift in Sources */,
 				53EFFB5224865BA80079291B /* DummyCategoryLearnModel.swift in Sources */,
+				53C46CB6249534BE00BE62F6 /* ListOfMateriView.swift in Sources */,
 				53EFFB4F24865AB20079291B /* DataModel.xcdatamodeld in Sources */,
 				5308B0B02485BE0100A15E36 /* ProjectCell.swift in Sources */,
 				53EFFB462486573D0079291B /* LearnVC.swift in Sources */,
@@ -363,9 +412,12 @@
 				912BB2E82477C5E4005733A1 /* LoginScreen.swift in Sources */,
 				5308B0A82485900A00A15E36 /* LiveClassView.swift in Sources */,
 				53231D08247A9EAF009E3E84 /* ClassVC.swift in Sources */,
+				53C46CC024965EF500BE62F6 /* CategoryMateriModel.swift in Sources */,
 				538CB3052487203200AC4979 /* BookmarkVC.swift in Sources */,
 				53231D18247B741C009E3E84 /* Constants.swift in Sources */,
+				53C46CB42495349000BE62F6 /* ListOfMateriVC.swift in Sources */,
 				53EFFB5A24868B2C0079291B /* LearnRepository.swift in Sources */,
+				53C46CBB24964F4A00BE62F6 /* HeaderListMateriReusableView.swift in Sources */,
 				912BB2EA2477C5F5005733A1 /* LoginField.swift in Sources */,
 				912BB2EC2477C618005733A1 /* Extension.swift in Sources */,
 				5308B0B22485BE3D00A15E36 /* ProjectModel.swift in Sources */,
