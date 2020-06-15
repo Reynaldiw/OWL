@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ListOfMateriVC: UIViewController {
+class ListCategoryOfMateriVC: UIViewController {
     
     @IBOutlet weak var listOfMateriCollectionView: UICollectionView!
     
-    var listView: ListOfMateriView { return self.view as! ListOfMateriView }
+    var listView: ListCategoryOfMateriView { return self.view as! ListCategoryOfMateriView }
     
     var categoryModels = [CategoryMateriModel]()
     
     override func loadView() {
-        self.view = ListOfMateriView()
+        self.view = ListCategoryOfMateriView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,7 +71,7 @@ class ListOfMateriVC: UIViewController {
     }
 }
 
-extension ListOfMateriVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ListCategoryOfMateriVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categoryModels.count
@@ -83,6 +83,10 @@ extension ListOfMateriVC: UICollectionViewDelegate, UICollectionViewDataSource, 
         cell.categoryModel = categoryModels[indexPath.row]
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        MateriWireframe.moveToLearningMaterial(category: categoryModels[indexPath.row], caller: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

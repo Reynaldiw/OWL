@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListOfMateriView: UIView {
+class ListCategoryOfMateriView: UIView {
     
     var frameWidth: CGFloat?
     
