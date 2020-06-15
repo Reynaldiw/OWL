@@ -9,6 +9,8 @@
 import UIKit
 
 class LearningMaterialView: UIView {
+    
+    let listOfLearningMaterialView = ListOfLearningMaterialView()
         
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +32,7 @@ class LearningMaterialView: UIView {
         classroomOptionsButton.addSubview(labelClassroomOptions)
         self.addSubview(materiView)
         materiView.addSubview(segmentedControl)
+        materiView.addSubview(listOfLearningMaterialView)
     }
     
     fileprivate func setupConstraints() {
@@ -44,6 +47,7 @@ class LearningMaterialView: UIView {
         setupClassroomOptionsLabelConstraint()
         setupMateriViewConstraint()
         setupSegmentedControlConstraint()
+        setupListOfLearningMaterialConstraint()
     }
     
     lazy var imageThumbnailView: UIImageView = {
@@ -171,6 +175,10 @@ class LearningMaterialView: UIView {
     
     fileprivate func setupSegmentedControlConstraint() {
         segmentedControl.anchor(top: materiView.topAnchor, bottom: nil, leading: materiView.leadingAnchor, trailing: materiView.trailingAnchor, marginTop: 15, marginBottom: 0, marginLeading: 20, marginTrailing: -20, width: 0, height: 0, centerX: nil, centerY: nil, marginFromCenterX: 0, marginFromCenterY: 0)
+    }
+    
+    fileprivate func setupListOfLearningMaterialConstraint() {
+        listOfLearningMaterialView.anchor(top: segmentedControl.bottomAnchor, bottom: materiView.bottomAnchor, leading: materiView.leadingAnchor, trailing: materiView.trailingAnchor, marginTop: 10, marginBottom: 0, marginLeading: 0, marginTrailing: 0, width: 0, height: 0, centerX: nil, centerY: nil, marginFromCenterX: 0, marginFromCenterY: 0)
     }
     
     required init?(coder: NSCoder) {
